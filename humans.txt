@@ -1,0 +1,44 @@
+
+                            
+/* TEAM */
+
+                            
+Your title: Anand Vasudevan	
+
+                            
+email:anandvasudevan9@gmail.com
+
+                            
+Twitter:@anand9
+
+                            
+Location:Kerala, India
+
+                         
+                 
+                      						
+
+							
+/* THANKS */
+
+							
+Name: @srih4ri
+
+						
+                 
+                                     
+
+                            
+/* SITE */
+
+                            
+Last update: 2011/08/08 
+
+                            
+Standards: HTML, CSS3
+
+                            
+Components: Spritely, jQuery.
+
+                            
+Software: Notepad++
