@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="eng" lang="eng">
+<head>
+
+
+	<script src="js/jquery-1.6.2.min.js" type="text/javascript"></script>
+	<script src="js/jquery.spritely-0.5.js" type="text/javascript"></script>	
+	<style type="text/css">
+		#city1 {
+			margin-top:40px;
+			width:99%;
+			height:350px;
+			background: transparent url(images/city1.png) repeat-x;
+			position:absolute;
+			}
+		#city2 {
+			margin-top:40px;
+			width:99%;
+			height:350px;
+			background: transparent url(images/city2.png) repeat-x;
+			position:absolute;
+			}
+		#sky {
+			width:99%;
+			height:350px;
+			background: transparent url(images/sky.jpg) repeat-x;
+			position:absolute;
+			}
+		#plane {
+			width:730px;
+			height:167px;
+			background: transparent url(images/planesprite4.png) repeat-x;
+			position:absolute;
+			margin-left:200px;
+			}
+		#kili {
+			width:180px;
+			height:118px;
+			background: transparent url(images/bird.png);
+			position:absolute;
+		}
+	</style>
+		<script type="text/javascript">
+
+		
+			$(document).ready(function() {
+				$('#sky').pan({fps:24, speed:0.5, dir:'right'});
+				$('#city1').pan({fps:24, speed:2, dir:'left'});
+				$('#city2').pan({fps:24, speed:2, dir:'right'});
+				$('#kili')
+					.sprite({fps: 10, no_of_frames: 3})
+					.spRandom({
+					  top: 70,
+					  left: 100,
+					  right: 200,
+					  bottom: 340,
+					  speed: 4000,
+					  pause: 3000
+				  })
+					.activeOnClick().active();
+				$('body').flyToTap();
+				
+				$('#plane').sprite({fps: 10, no_of_frames: 14});
+				
+
+			});
+		</script>	
+		
+</head>
+<body>
+	<div id="sky"></div>
+	<div id="city1">
+	</div>
+	<div id="city2">
+	</div>
+	<!--<div id="plane">
+	</div> -->
+	<div id="kili">
+	</div>
+</body>
